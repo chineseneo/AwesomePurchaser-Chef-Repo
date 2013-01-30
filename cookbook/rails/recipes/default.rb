@@ -6,7 +6,7 @@ end
 
 gem_package "rack" do
   version "1.4.0"
-  actioin :install
+  action :install
 end
 
 gem_package "rails"
