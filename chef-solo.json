@@ -1,0 +1,11 @@
+{
+  "name": "AwesomePurchaser",
+  "run_list": [
+    "apache",
+    "git",
+    "mysql",
+    "passenger",
+    "rvm",
+    "rails"
+  ]
+}
