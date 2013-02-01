@@ -1,11 +1,8 @@
 chef_binary=`which chef-solo`
-knife_binary=`which knife`
 
 apt-get update
-if [ "$chef_binary" == "" ] ; then
-    apt-get install chef
-    echo "export PATH=/var/lib/gems/1.8:$PATH" >> ~/.bash_profile
-    . ~/.bash_profile
+if [ "$chef_binary" = "" ] ; then
+    apt-get -q -y install chef
 fi
 
 mkdir -p /tmp/chef-solo
