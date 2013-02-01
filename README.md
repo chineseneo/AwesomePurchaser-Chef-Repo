@@ -9,4 +9,5 @@ HowTo
 3. Untar the package
 4. Run install.sh under root:
 `sudo ./install.sh` or `sudo su; ./install.sh`
-5. Run `make_gem_available.sh`
+5. Add Rubygems to PATH:
+`echo 'export PATH=$PATH:/var/lib/gems/1.8/bin' >> ~/.bash_profile; . ~/.bash_profile`
